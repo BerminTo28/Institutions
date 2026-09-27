@@ -17,8 +17,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- ✅ Java 17 (LTS) -->
-        <maven.compiler.release>17</maven.compiler.release>
-<maven.compiler.release>17</maven.compiler.release>
+        <maven.compiler.release>25</maven.compiler.release>
+<maven.compiler.release>25</maven.compiler.release>
 
         <!-- Versions -->
         <servlet.version>4.0.1</servlet.version>
@@ -39,7 +39,7 @@
         <jakartaMail.version>2.0.1</jakartaMail.version>
 
         <!-- ✅ Version du compiler plugin alignée sur Java 17 -->
-        <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
+        <maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
 
         <!-- ============================================================
              Config jpackage (utilisable via -Pjpackage)
