@@ -63,3 +63,7 @@ config.properties
 *.temp
 *.swp
 *~
+
+# Backups pom.xml
+pom.xml.backup*
+*.backup-*
