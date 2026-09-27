@@ -1,0 +1,6 @@
+/**
+ * ImageIO
+ */
+public interface ImageIO {
+
+}
