@@ -1,0 +1,40 @@
+﻿{
+    "name": "M-TECH Institutions (Java 21)",
+    "image": "mcr.microsoft.com/devcontainers/java:21-bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "21",
+            "installMaven": "true"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-maven",
+                "vscjava.vscode-java-debug",
+                "redhat.vscode-xml",
+                "eamodio.gitlens"
+            ],
+            "settings": {
+                "java.configuration.runtimes": [
+                    {
+                        "name": "JavaSE-21",
+                        "path": "/usr/local/sdkman/candidates/java/current",
+                        "default": true
+                    }
+                ],
+                "files.encoding": "utf8"
+            }
+        }
+    },
+    "postCreateCommand": "mvn clean compile -DskipTests",
+    "forwardPorts": [8080],
+    "portsAttributes": {
+        "8080": {
+            "label": "Application M-TECH",
+            "onAutoForward": "notify"
+        }
+    },
+    "remoteUser": "vscode"
+}
